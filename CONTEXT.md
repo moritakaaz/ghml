@@ -107,10 +107,17 @@ refactor: description → no bump
 ### Release Workflow
 ```bash
 npx standard-version          # bump version + generate CHANGELOG + git tag
-npm publish                    # publish to npm
 git push --follow-tags         # push commits + tags to GitHub
+# GitHub Actions will automatically:
+#   → publish to npm
+#   → create GitHub Release with changelog
 ```
 
 ## Repository
 - **GitHub:** https://github.com/moritakaaz/ghml
 - **npm:** https://www.npmjs.com/package/@moritakaaz/ghml
+- **Install:** `npm install -g @moritakaaz/ghml`
+
+## CI/CD (GitHub Actions)
+- **CI** (`.github/workflows/ci.yml`): Build check on every push/PR to master (Node 16, 18, 20)
+- **Release** (`.github/workflows/release.yml`): Auto publish to npm + create GitHub Release on tag push (`v*`)
