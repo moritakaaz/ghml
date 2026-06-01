@@ -1,0 +1,57 @@
+{
+  "name": "ghml",
+  "version": "1.0.0",
+  "description": "GitHub Multi-Login - Switch between multiple GitHub accounts on one device using SSH keys",
+  "main": "dist/index.js",
+  "bin": {
+    "ghml": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "prepare": "husky install",
+    "release": "standard-version",
+    "release:first": "standard-version --first-release",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moritakaaz/ghml.git"
+  },
+  "homepage": "https://github.com/moritakaaz/ghml#readme",
+  "bugs": {
+    "url": "https://github.com/moritakaaz/ghml/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "github",
+    "multi-account",
+    "ssh",
+    "git",
+    "cli",
+    "multi-login",
+    "switch-account"
+  ],
+  "author": "moritakaaz",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "4.1.2",
+    "commander": "11.1.0",
+    "inquirer": "8.2.6"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@types/inquirer": "9.0.7",
+    "@types/node": "20.10.0",
+    "husky": "^8.0.3",
+    "standard-version": "^9.5.0",
+    "typescript": "5.3.2"
+  }
+}
