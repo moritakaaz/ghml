@@ -1,6 +1,6 @@
 {
   "name": "@moritakaaz/ghml",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GitHub Multi-Login - Switch between multiple GitHub accounts on one device using SSH keys",
   "main": "dist/index.js",
   "bin": {
