@@ -7,7 +7,7 @@ Switch between personal, work, and other GitHub accounts seamlessly without manu
 ## Install
 
 ```bash
-npm install -g ghml
+npm install -g @moritakaaz/ghml
 ```
 
 ## Quick Start

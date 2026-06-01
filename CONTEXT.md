@@ -113,4 +113,4 @@ git push --follow-tags         # push commits + tags to GitHub
 
 ## Repository
 - **GitHub:** https://github.com/moritakaaz/ghml
-- **npm:** https://www.npmjs.com/package/ghml
+- **npm:** https://www.npmjs.com/package/@moritakaaz/ghml
